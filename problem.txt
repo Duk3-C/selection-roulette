@@ -1,0 +1,57 @@
+Competition - Random Student Selection Roulette 
+Objective 
+Develop a C# program that implements a random student selection roulette. The program must randomly select two students from a predefined list, assign them specific roles, and run continuously until the user decides to end it. Let's make it interactive and fun! 
+
+Functional Requirements 
+1. Random Student Selection 
+The program must pick two students from the list randomly.
+C#'s random number generation will be used to ensure the selection is fair and unbiased.
+A student CANNOT be selected for the same role more than once on the same day. If a student has been selected for the "Live Developer" role, they cannot be selected for that role again during the same execution. However, they may be selected for the other role (Exercise Facilitator) if they haven't held that role yet in the same execution.
+Each student can only hold ONE role per execution.
+2. Role Assignment 
+Live Developer: The first selected student will assume this role.
+Exercise Facilitator: The second selected student will assume this role.
+The program must ensure that the same student does not hold both roles at the same time.
+The information must be displayed clearly and attractively in the console.
+3. Continuous Execution 
+The program must run in a loop until the user decides to exit.
+The exit condition will be defined by a special key or command.
+Before exiting, a confirmation message will be displayed to prevent accidental closures.
+4. Console User Interface 
+The program must have an interactive menu that allows:
+- Start a new selection.
+- View the last selected.
+- End execution.
+Information must be displayed in an attractive and easy-to-read format.
+Clear messages will guide the user throughout the process.
+5. Error Handling 
+Avoid common failures such as:
+- Attempting to select students when the list is empty.
+- Entering invalid commands.
+- Unexpected errors during execution.
+In case of an error, the program will display friendly messages instead of crashing.
+6. Input Validation 
+The program must validate all user input:
+Menu option: If the user enters an option that does not correspond to a valid number (e.g., "1", "2", "3"), the program must display an error message and ask the user to enter a correct option.
+Exit confirmation: If the user tries to exit without confirming properly, the program will ask for confirmation to prevent accidental closures.
+Student selection: If the student list is empty, the program must alert the user and avoid attempting to perform a random selection.
+Extra Requirements (Mandatory for MONDAY, FRIDAY, and SATURDAY (9-12))
+- Exclusive use of arrays:
+The use of lists, ArrayLists, or other dynamic structures is not allowed.
+Traditional arrays must be used to store and manipulate student and role data.
+Extra Requirements (Mandatory for MONDAY, FRIDAY, and SATURDAY (9-12))
+
+1. Data Persistence 
+Save selection results to a text or CSV file.
+Allow the user to view the history of previous selections.
+2. Student and Custom Role Management
+Add options to add, remove, and edit students.
+Allow customization of assigned roles.
+3. Enhanced Console Graphical Interface 
+Add colors and effects to improve the visual experience.
+Include dialogs and interactive menus.
+Important Tips:
+
+Don't limit yourselves: Meet all the requirements, but think beyond. Anything extra you add will be highly valued as long as it contributes to the project! Don't do things just for the sake of it (a calculator doesn't make sense here). The goal is to improve functionality and user experience.
+Think about errors: Anticipate potential problems the program might have. What if the student list is empty? Or if the user enters an invalid option? Think about it and make sure to handle those cases!
+This challenge has tremendous potential for you to showcase your creativity and programming skills!  I'm sure you can create something amazing.
